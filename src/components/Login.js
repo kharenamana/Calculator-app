@@ -19,7 +19,7 @@ const Login = (props) => {
       setError('');
       setLoading(true);
       await login(eamilRef.current.value, passwordRef.current.value);
-      history.push('/');
+      history.push('/dashboard');
     } catch {
       setError('Failed to log in');
     }

@@ -24,7 +24,7 @@ const Signup = () => {
       setError('');
       setLoading(true);
       await signup(eamilRef.current.value, passwordRef.current.value);
-      history.push('/');
+      history.push('/dashboard');
     } catch (error) {
       setError('Failed to create an account');
     }
@@ -66,7 +66,7 @@ const Signup = () => {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Already a member? <Link to="/login">Log In</Link>
+          Already a member? <Link to="/">Log In</Link>
         </div>
         </div>
       </Container>
